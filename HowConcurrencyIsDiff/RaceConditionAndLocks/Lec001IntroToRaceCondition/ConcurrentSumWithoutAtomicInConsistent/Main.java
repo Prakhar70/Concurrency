@@ -1,4 +1,4 @@
-package UnderstandingConcurrency.ConcurrentSum;
+package HowConcurrencyIsDiff.RaceConditionAndLocks.Lec001IntroToRaceCondition.ConcurrentSumWithoutAtomicInConsistent;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,8 @@ import java.util.Random;
 import java.util.concurrent.atomic.AtomicLong;
 
 public class Main {
-    public static AtomicLong sum = new AtomicLong(0);
+    // public static AtomicLong sum = new AtomicLong(0);
+    public static long sum = 0;
     public static AtomicLong cnt = new AtomicLong(0);
 
     public static void main(String[] args) {
@@ -41,7 +42,7 @@ public class Main {
 
         while(cnt.get()<4){
         }
-        System.out.println(sum.get());
+        System.out.println(sum);
     }
 
     private static void seqSum(List<Integer> nums) {

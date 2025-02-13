@@ -1,4 +1,4 @@
-package UnderstandingConcurrency.ConcurencyIsDifferent;
+package HowConcurrencyIsDiff.UnderstandingConcurrency.ConcurencyIsDifferent;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package UnderstandingConcurrency.CallStack;
+package HowConcurrencyIsDiff.UnderstandingConcurrency.CallStack;
 
 public class MyRunnable implements Runnable {
     @Override

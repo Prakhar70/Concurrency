@@ -1,4 +1,4 @@
-package UnderstandingConcurrency.ConcurrentSum;
+package HowConcurrencyIsDiff.RaceConditionAndLocks.Lec001IntroToRaceCondition.ConcurrentSumWithoutAtomicInConsistent;
 
 import java.util.List;
 
@@ -13,11 +13,10 @@ public class Worker implements Runnable{
 
     @Override
     public void run() {
-        //long s =0;
+        long s =0;
         for(int i=l;i<=r;i++)
-            //s+=nums.get(i);
-            Main.sum.addAndGet(nums.get(i));
-        // Main.sum.addAndGet(s);
+            s+=nums.get(i);
+        Main.sum+=s;
         Main.cnt.incrementAndGet();
     }
 

@@ -1,4 +1,4 @@
-package UnderstandingConcurrency.FirstProgram;
+package HowConcurrencyIsDiff.UnderstandingConcurrency.FirstProgram;
 
 public class FirstProgram {
     public static void main(String[] args) {

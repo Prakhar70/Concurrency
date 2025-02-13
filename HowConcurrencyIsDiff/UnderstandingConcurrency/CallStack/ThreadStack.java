@@ -1,5 +1,6 @@
-package UnderstandingConcurrency.CallStack;
-public class Main {
+package HowConcurrencyIsDiff.UnderstandingConcurrency.CallStack;
+
+public class ThreadStack {
     public static int func2(){
         return 0;
     }
@@ -12,7 +13,8 @@ public class Main {
     }
     public static void main (String[] args){
         try{
-            func1();
+            Thread t1 = new Thread(new MyRunnable());
+            t1.start();
         }catch(Exception e){
             System.out.println("caught");
         }
